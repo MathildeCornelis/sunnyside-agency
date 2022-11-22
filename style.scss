@@ -87,13 +87,12 @@
             }
             .logo_header{
                 width: 25vw;
-                margin-left: 5vw;
                 padding-top: 5vw;
             }
             .burger_menu{
                 width: 6vw;
                 padding-left: 45vw;
-                margin-bottom: 1vw;
+                margin-top: 5vw;
             }
             h1{
                 font-family: 'Fraunces', serif;
@@ -216,4 +215,15 @@
             }
             @include text_three;
         }
+        .nine{
+            margin-top: 1100vw;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .four_img{
+                width: 50vw;
+                background-size: cover;
+                }
+            }
 }

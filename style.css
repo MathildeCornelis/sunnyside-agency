@@ -333,13 +333,12 @@ body .one .top_bar {
 }
 body .one .logo_header {
   width: 25vw;
-  margin-left: 5vw;
   padding-top: 5vw;
 }
 body .one .burger_menu {
   width: 6vw;
   padding-left: 45vw;
-  margin-bottom: 1vw;
+  margin-top: 5vw;
 }
 body .one h1 {
   font-family: "Fraunces", serif;
@@ -543,4 +542,15 @@ body .height .customer_job {
   font-size: 3vw;
   color: #A7AAAD;
   font-weight: 600;
+}
+body .nine {
+  margin-top: 1100vw;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .nine .four_img {
+  width: 50vw;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
