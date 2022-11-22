@@ -374,7 +374,11 @@ body .three h2 {
 body .three p {
   position: absolute;
   font-family: "Barlow", sans-serif;
-  font-size: 5vw;
+  font-size: 4vw;
+  color: #808397;
+  line-height: 7vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 body .three a {
   position: absolute;
@@ -389,7 +393,7 @@ body .three p {
   margin-top: 125vw;
 }
 body .three a {
-  margin-top: 155vw;
+  margin-top: 160vw;
 }
 body .four {
   display: flex;
@@ -398,7 +402,7 @@ body .four .glass {
   width: 100vw;
   position: absolute;
   align-content: center;
-  margin-top: 165vw;
+  margin-top: 175vw;
 }
 body .five {
   display: flex;
@@ -414,7 +418,11 @@ body .five h2 {
 body .five p {
   position: absolute;
   font-family: "Barlow", sans-serif;
-  font-size: 5vw;
+  font-size: 4vw;
+  color: #808397;
+  line-height: 7vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 body .five a {
   position: absolute;
@@ -423,11 +431,116 @@ body .five a {
   color: black;
 }
 body .five h2 {
-  margin-top: 260vw;
+  margin-top: 275vw;
 }
 body .five p {
-  margin-top: 290vw;
+  margin-top: 305vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 body .five a {
-  margin-top: 320vw;
+  margin-top: 340vw;
+}
+body .six {
+  background-image: url(./assets/cherry-mobile.jpg);
+  width: 100%;
+  background-size: cover;
+  height: 165vw;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 495vw;
+  display: flex;
+  align-items: center;
+}
+body .six h3 {
+  position: absolute;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-size: 8vw;
+}
+body .six p {
+  font-family: "Barlow", sans-serif;
+  font-size: 4vw;
+  line-height: 7vw;
+}
+body .six h3 {
+  margin-top: 80vw;
+  color: #24554A;
+}
+body .six p {
+  margin-top: 120vw;
+  font-size: 4vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  color: #24554A;
+}
+body .seven {
+  background-image: url(./assets/madarine-mobile.jpg);
+  width: 100%;
+  background-size: cover;
+  height: 165vw;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 655vw;
+  display: flex;
+  align-items: center;
+}
+body .seven h3 {
+  position: absolute;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-size: 8vw;
+}
+body .seven p {
+  font-family: "Barlow", sans-serif;
+  font-size: 4vw;
+  line-height: 7vw;
+}
+body .seven h3 {
+  margin-top: 80vw;
+  color: #052C3B;
+}
+body .seven p {
+  margin-top: 120vw;
+  font-size: 4vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  color: #052C3B;
+}
+body .height {
+  position: absolute;
+  width: 100%;
+  margin-top: 828vw;
+}
+body .height h4 {
+  font-family: "Fraunces", serif;
+  color: #A7AAAD;
+  letter-spacing: 1vw;
+  text-transform: uppercase;
+  font-size: 4vw;
+}
+body .height .photo {
+  border-radius: 50%;
+}
+body .height .customer_desc {
+  font-family: "Barlow", sans-serif;
+  line-height: 7vw;
+  font-size: 4vw;
+  color: #5B636D;
+  margin-left: 9vw;
+  margin-right: 9vw;
+  font-weight: 600;
+}
+body .height .customer_sing {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: black;
+}
+body .height .customer_job {
+  font-family: "Barlow", sans-serif;
+  font-size: 3vw;
+  color: #A7AAAD;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

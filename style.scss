@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 @import "normalize";
 
-@mixin text {
+@mixin text_one {
     display: flex;
     justify-content: center;
         h2{
@@ -15,7 +15,11 @@
         p{
         position: absolute;
         font-family: 'Barlow', sans-serif;
-        font-size: 5vw;
+        font-size: 4vw;
+        color: #808397;
+        line-height: 7vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
         }
         a{
         position: absolute;
@@ -23,6 +27,43 @@
         font-size: 4vw;
         color: black;
         }
+}
+
+@mixin text_two {
+    h3{
+        position: absolute;
+        text-align: center;
+        font-family: 'Fraunces', serif;
+        font-size: 8vw;
+    }
+    p{
+        font-family: 'Barlow', sans-serif;
+        font-size: 4vw;
+        line-height: 7vw;
+    }
+}
+
+@mixin text_three {
+    .customer_desc{
+        font-family: 'Barlow', sans-serif;
+        line-height: 7vw;
+        font-size: 4vw;
+        color: #5B636D;
+        margin-left: 9vw;
+        margin-right: 9vw;
+        font-weight: 600;
+    }
+    .customer_sing{
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        color: black;      
+    }
+    .customer_job{
+        font-family: 'Barlow', sans-serif;
+        font-size: 3vw;
+        color: #A7AAAD;
+        font-weight: 600;
+    }
 }
 
     body{
@@ -75,7 +116,7 @@
             }
         }
         .three{
-            @include text;
+            @include text_one;
             h2{
             margin-top: 95vw;
             }
@@ -83,7 +124,7 @@
             margin-top: 125vw;
             }
             a{
-            margin-top: 155vw;
+            margin-top: 160vw;
             }
         }
         .four{
@@ -92,20 +133,87 @@
             width: 100vw;
             position: absolute;
             align-content: center;
-            margin-top: 165vw;
+            margin-top: 175vw;
             }
         }
         .five{
-        @include text;
+        @include text_one;
         h2{
-            margin-top: 260vw;
+            margin-top: 275vw;
             }
             p{
-            margin-top: 290vw;
+            margin-top: 305vw;
+            margin-left: 3vw;
+            margin-right: 3vw;
             }
             a{
-            margin-top: 320vw;
+            margin-top: 340vw;
             }
         
-    }
+        }
+        .six{
+        background-image: url(./assets/cherry-mobile.jpg);
+        width: 100%;
+        background-size: cover;
+        height: 165vw;
+        justify-content: center; 
+        overflow: hidden;
+        position: absolute;
+        margin-top: 495vw;
+        @include text_two;
+        display: flex;
+        align-items: center;
+            h3{
+               margin-top: 80vw; 
+               color: #24554A;
+            }
+            p{
+                margin-top: 120vw;
+                font-size: 4vw;
+                margin-left: 3vw;
+                margin-right: 3vw;
+                color: #24554A;
+            }
+        }
+        .seven{
+        background-image: url(./assets/madarine-mobile.jpg);
+        width: 100%;
+        background-size: cover;
+        height: 165vw;
+        justify-content: center; 
+        overflow: hidden;
+        position: absolute;
+        margin-top: 655vw;
+        @include text_two;
+        display: flex;
+        align-items: center;
+            h3{
+               margin-top: 80vw; 
+               color: #052C3B;
+            }
+            p{
+                margin-top: 120vw;
+                font-size: 4vw;
+                margin-left: 3vw;
+                margin-right: 3vw;
+                color: #052C3B;
+            }
+
+        }
+        .height{
+            position: absolute;
+            width: 100%;
+            margin-top: 828vw;
+            h4{
+            font-family: 'Fraunces', serif;
+            color: #A7AAAD;
+            letter-spacing: 1vw;
+            text-transform: uppercase;
+            font-size: 4vw;
+            }
+            .photo{
+                border-radius: 50%;
+            }
+            @include text_three;
+        }
 }
