@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import "normalize";
+
+@mixin text {
+    display: flex;
+    justify-content: center;
+        h2{
+        position: absolute;
+        text-align: center;
+        font-family: 'Fraunces', serif;
+        font-size: 10vw;
+        color: rgb(0, 0, 0);
+        }
+        p{
+        position: absolute;
+        font-family: 'Barlow', sans-serif;
+        font-size: 5vw;
+        }
+        a{
+        position: absolute;
+        font-family: 'Fraunces', serif;
+        font-size: 4vw;
+        color: black;
+        }
+}
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+       .one{
+        background-image: url(./assets/image-header-mobile.jpg);
+        width: 100%;
+        background-size: cover;
+        height: 140vw;
+        justify-content: center; 
+        overflow: hidden;
+            .top_bar{
+                visibility: hidden;
+            }
+            .logo_header{
+                width: 25vw;
+                margin-left: 5vw;
+                padding-top: 5vw;
+            }
+            .burger_menu{
+                width: 6vw;
+                padding-left: 45vw;
+                margin-bottom: 1vw;
+            }
+            h1{
+                font-family: 'Fraunces', serif;
+                color: white;
+                margin-top: 20vw;
+                font-size: 15vw;
+                font-weight: 900;
+            }
+            .arrow{
+                position: absolute;
+                align-items: center;
+            }
+        }
+        .two{
+        display: flex;
+            .egg{
+                width: 100vw;
+                position: absolute;
+                align-content: center;
+            }
+        }
+        .three{
+            @include text;
+            h2{
+            margin-top: 95vw;
+            }
+            p{
+            margin-top: 125vw;
+            }
+            a{
+            margin-top: 155vw;
+            }
+        }
+        .four{
+        display: flex;
+            .glass{
+            width: 100vw;
+            position: absolute;
+            align-content: center;
+            margin-top: 165vw;
+            }
+        }
+        .five{
+        @include text;
+        h2{
+            margin-top: 260vw;
+            }
+            p{
+            margin-top: 290vw;
+            }
+            a{
+            margin-top: 320vw;
+            }
+        
+    }
+}
