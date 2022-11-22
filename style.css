@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -325,31 +325,29 @@ body .one {
   width: 100%;
   background-size: cover;
   height: 140vw;
-  justify-content: center;
   overflow: hidden;
 }
 body .one .top_bar {
   visibility: hidden;
 }
 body .one .logo_header {
-  width: 25vw;
-  padding-top: 5vw;
+  width: 30vw;
+  padding-top: 8vw;
+  margin-right: 13vw;
 }
 body .one .burger_menu {
   width: 6vw;
-  padding-left: 45vw;
-  margin-top: 5vw;
+  padding-left: 40vw;
+  margin-top: 8vw;
 }
 body .one h1 {
   font-family: "Fraunces", serif;
   color: white;
   margin-top: 20vw;
-  font-size: 15vw;
+  font-size: 10vw;
   font-weight: 900;
-}
-body .one .arrow {
-  position: absolute;
-  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2vw;
 }
 body .two {
   display: flex;
@@ -552,5 +550,36 @@ body .nine {
 }
 body .nine .four_img {
   width: 50vw;
-  background-size: cover;
+}
+
+footer .footer {
+  width: 100vw;
+  margin-top: 1060vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #90D4C6;
+}
+footer .footer .ft_titre {
+  margin-top: 5vw;
+  color: #2C7566;
+  font-family: "Barlow", sans-serif;
+  font-size: 8vw;
+  font-weight: 900;
+}
+footer .footer .ft_link a {
+  font-family: "Barlow", sans-serif;
+  color: #458D7E;
+  margin-top: 10vw;
+  letter-spacing: -0.128571px;
+  text-decoration: none;
+}
+footer .footer .lk_rs a {
+  font-family: "Barlow", sans-serif;
+  color: #458D7E;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  text-decoration: none;
+  letter-spacing: -0.128571px;
 }/*# sourceMappingURL=style.css.map */
