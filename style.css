@@ -644,7 +644,7 @@ footer .footer .lk_rs a img {
   body .one h1 {
     font-family: "Fraunces", serif;
     color: white;
-    margin-top: 6vw;
+    margin-top: 18vw;
     font-size: 5vw;
     font-weight: 900;
     text-transform: uppercase;
@@ -652,7 +652,7 @@ footer .footer .lk_rs a img {
   }
   body .one .arrow {
     width: 5vw;
-    margin-top: 28vw;
+    margin-top: 1vw;
   }
   body .entoure_2_3 {
     width: 50vw;
@@ -821,40 +821,47 @@ footer .footer .lk_rs a img {
     padding-right: 5vw;
   }
   body .height {
-    position: absolute;
-    width: 100%;
-    margin-top: 828vw;
+    width: 100vw;
+    margin-top: 200vw;
   }
   body .height h4 {
     font-family: "Fraunces", serif;
     color: #A7AAAD;
     letter-spacing: 1vw;
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 2vw;
   }
-  body .height .photo {
-    border-radius: 50%;
-    margin-top: 20vw;
+  body .height .row {
+    margin-top: 5vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
   }
-  body .height .customer_desc {
+  body .height .row div {
+    width: 33vw;
+  }
+  body .height .row div .customer_desc {
     font-family: "Barlow", sans-serif;
     line-height: 7vw;
-    font-size: 4vw;
+    font-size: 1.5vw;
     color: #5B636D;
-    margin-left: 9vw;
-    margin-right: 9vw;
     font-weight: 600;
   }
-  body .height .customer_sing {
+  body .height .row div .customer_sing {
     font-family: "Fraunces", serif;
     font-weight: 900;
     color: black;
   }
-  body .height .customer_job {
+  body .height .row div .customer_job {
     font-family: "Barlow", sans-serif;
     font-size: 3vw;
     color: #A7AAAD;
     font-weight: 600;
+  }
+  body .height .row div .photo {
+    width: 10vw;
+    border-radius: 50%;
+    margin-top: 12vw;
   }
   body .nine {
     margin-top: 1150vw;

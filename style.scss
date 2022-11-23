@@ -299,6 +299,27 @@ footer{
             line-height: 2.5vw;
         }
     }
+    @mixin text_three {
+        .customer_desc{
+            font-family: 'Barlow', sans-serif;
+            line-height: 7vw;
+            font-size: 1.5vw;
+            color: #5B636D;
+            font-weight: 600;
+        }
+        .customer_sing{
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            color: black;      
+        }
+        .customer_job{
+            font-family: 'Barlow', sans-serif;
+            font-size: 3vw;
+            color: #A7AAAD;
+            font-weight: 600;
+        }
+    }
+
     body{
         width: 100vw;
         height: 100vh;
@@ -350,7 +371,7 @@ footer{
             h1{
                 font-family: 'Fraunces', serif;
                 color: white;
-                margin-top: 6vw;
+                margin-top: 18vw;
                 font-size: 5vw;
                 font-weight: 900;
                 text-transform: uppercase;
@@ -358,7 +379,7 @@ footer{
             }
             .arrow{
                 width: 5vw;
-                margin-top: 28vw;
+                margin-top: 1vw;
             }
         }
         .entoure_2_3{
@@ -479,21 +500,31 @@ footer{
                 }
         }
         .height{
-            position: absolute;
-            width: 100%;
-            margin-top: 828vw;
+        width: 100vw;
+        margin-top: 200vw;
             h4{
             font-family: 'Fraunces', serif;
             color: #A7AAAD;
             letter-spacing: 1vw;
             text-transform: uppercase;
-            font-size: 4vw;
+            font-size: 2vw;
             }
-            .photo{
-                border-radius: 50%;
-                margin-top: 20vw;
+            .row{
+                margin-top: 5vw;
+                width: 100vw;
+                display: flex;
+                flex-direction: row; 
+                div{
+                    width: 33vw;
+                    @include text_three;
+                    .photo{
+                        width: 10vw;
+                        border-radius: 50%;
+                        margin-top: 12vw;
+                    }
+                } 
             }
-            @include text_three;
+            
         }
         .nine{
             margin-top: 1150vw;
