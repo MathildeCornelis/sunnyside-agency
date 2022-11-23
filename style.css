@@ -626,15 +626,15 @@ footer .footer .lk_rs a img {
   body .one .top_bar .other {
     text-decoration: none;
     font-family: "Barlow", sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.5vw;
   }
   body .one .top_bar .contact {
     font-family: "Fraunces", serif;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1vw;
-    background-color: rgba(255, 255, 255, 0.348);
+    background-color: rgb(255, 255, 255);
     text-transform: uppercase;
     padding: 0.8vw;
     padding-left: 1vw;
@@ -746,73 +746,79 @@ footer .footer .lk_rs a img {
     margin-top: 73vw;
     margin-right: 18vw;
   }
-  body .six {
-    background-image: url(./assets/cherry-mobile.jpg);
-    width: 100%;
+  body .entoure_6_7 {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+  body .entoure_6_7 .six {
+    background-image: url(./assets/cherry.jpg);
+    width: 50vw;
+    height: 50vw;
     background-size: cover;
-    height: 165vw;
+    background-position: center;
     justify-content: center;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 495vw;
+    margin-top: 83vw;
     display: flex;
     align-items: center;
   }
-  body .six h3 {
+  body .entoure_6_7 .six h3 {
     position: absolute;
     text-align: center;
     font-family: "Fraunces", serif;
-    font-size: 8vw;
+    font-size: 3vw;
   }
-  body .six p {
+  body .entoure_6_7 .six p {
     font-family: "Barlow", sans-serif;
-    font-size: 4vw;
-    line-height: 7vw;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
   }
-  body .six h3 {
-    margin-top: 80vw;
+  body .entoure_6_7 .six h3 {
     color: #24554A;
+    margin-top: 20vw;
   }
-  body .six p {
-    margin-top: 120vw;
-    font-size: 4vw;
+  body .entoure_6_7 .six p {
+    margin-top: 34vw;
     margin-left: 3vw;
     margin-right: 3vw;
     color: #24554A;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
-  body .seven {
-    background-image: url(./assets/madarine-mobile.jpg);
-    width: 100%;
+  body .entoure_6_7 .seven {
+    background-image: url(./assets/madarine.jpg);
+    width: 50vw;
+    height: 50vw;
+    margin-top: 83vw;
+    margin-left: 50vw;
     background-size: cover;
-    height: 165vw;
+    background-position: center;
     justify-content: center;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 655vw;
     display: flex;
     align-items: center;
   }
-  body .seven h3 {
+  body .entoure_6_7 .seven h3 {
     position: absolute;
     text-align: center;
     font-family: "Fraunces", serif;
-    font-size: 8vw;
+    font-size: 3vw;
   }
-  body .seven p {
+  body .entoure_6_7 .seven p {
     font-family: "Barlow", sans-serif;
-    font-size: 4vw;
-    line-height: 7vw;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
   }
-  body .seven h3 {
-    margin-top: 80vw;
+  body .entoure_6_7 .seven h3 {
+    margin-top: 20vw;
     color: #052C3B;
   }
-  body .seven p {
-    margin-top: 120vw;
-    font-size: 4vw;
+  body .entoure_6_7 .seven p {
+    margin-top: 34vw;
     margin-left: 3vw;
     margin-right: 3vw;
     color: #052C3B;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   body .height {
     position: absolute;

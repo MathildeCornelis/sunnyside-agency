@@ -286,6 +286,19 @@ footer{
             color: black;
             }
     }
+    @mixin text_two {
+        h3{
+            position: absolute;
+            text-align: center;
+            font-family: 'Fraunces', serif;
+            font-size: 3vw;
+        }
+        p{
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.5vw;
+            line-height: 2.5vw;
+        }
+    }
     body{
         width: 100vw;
         height: 100vh;
@@ -318,15 +331,15 @@ footer{
                 .other{
                 text-decoration: none;
                 font-family: 'Barlow', sans-serif;
-                color: white;
+                color: rgb(255, 255, 255);
                 font-size: 1.5vw;   
                 }
                 .contact{
                     font-family: 'Fraunces', serif;
                     text-decoration: none;
-                    color: white;
+                    color: rgb(0, 0, 0);
                     font-size: 1vw;
-                    background-color: rgba(255, 255, 255, 0.348);
+                    background-color: rgb(255, 255, 255);
                     text-transform: uppercase;
                     padding: 0.8vw;
                     padding-left: 1vw;
@@ -410,55 +423,60 @@ footer{
                     }
                 }
         }
+        .entoure_6_7{
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            .six{
+                background-image: url(./assets/cherry.jpg);
+                width: 50vw;
+                height: 50vw;
+                background-size: cover;
+                background-position: center;
+                justify-content: center; 
+                margin-top: 83vw;
+                @include text_two;
+                display: flex;
+                align-items: center;
+                    h3{
+                       color: #24554A;
+                       margin-top: 20vw;
+                    }
+                    p{
+                        margin-top: 34vw;
+                        margin-left: 3vw;
+                        margin-right: 3vw;
+                        color: #24554A;
+                        padding-left: 5vw;
+                        padding-right: 5vw;
+                    }
+                }
+                .seven{
+                background-image: url(./assets/madarine.jpg);
+                width: 50vw;
+                height: 50vw;
+                margin-top: 83vw;
+                margin-left: 50vw;
+                background-size: cover;
+                background-position: center;
+                justify-content: center; 
+                @include text_two;
+                display: flex;
+                align-items: center;
+                    h3{
+                       margin-top: 20vw; 
+                       color: #052C3B;
+                    }
+                    p{
+                        margin-top: 34vw;
+                        margin-left: 3vw;
+                        margin-right: 3vw;
+                        color: #052C3B;
+                        padding-left: 5vw;
+                        padding-right: 5vw;
+                    }
         
-        .six{
-        background-image: url(./assets/cherry-mobile.jpg);
-        width: 100%;
-        background-size: cover;
-        height: 165vw;
-        justify-content: center; 
-        overflow: hidden;
-        position: absolute;
-        margin-top: 495vw;
-        @include text_two;
-        display: flex;
-        align-items: center;
-            h3{
-               margin-top: 80vw; 
-               color: #24554A;
-            }
-            p{
-                margin-top: 120vw;
-                font-size: 4vw;
-                margin-left: 3vw;
-                margin-right: 3vw;
-                color: #24554A;
-            }
-        }
-        .seven{
-        background-image: url(./assets/madarine-mobile.jpg);
-        width: 100%;
-        background-size: cover;
-        height: 165vw;
-        justify-content: center; 
-        overflow: hidden;
-        position: absolute;
-        margin-top: 655vw;
-        @include text_two;
-        display: flex;
-        align-items: center;
-            h3{
-               margin-top: 80vw; 
-               color: #052C3B;
-            }
-            p{
-                margin-top: 120vw;
-                font-size: 4vw;
-                margin-left: 3vw;
-                margin-right: 3vw;
-                color: #052C3B;
-            }
-
+                }
         }
         .height{
             position: absolute;
