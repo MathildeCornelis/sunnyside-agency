@@ -265,3 +265,266 @@ footer{
         }
     }
 }
+@media screen and (min-width: 426px) {
+    @mixin text_one {
+            h2{
+            text-align: left;
+            font-family: 'Fraunces', serif;
+            font-size: 3vw;
+            color: rgb(0, 0, 0);
+            }
+            p{
+            font-family: 'Barlow', sans-serif;
+            text-align: left;
+            font-size: 1.5vw;
+            color: #808397;
+            line-height: 3vw;
+            }
+            a{
+            font-family: 'Fraunces', serif;
+            font-size: 2vw;
+            color: black;
+            }
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #F2F2F2;
+       .one{
+        background-image: url(./assets/image-header.jpg);
+        background-position: center;
+        width: 100%;
+        background-size: cover;
+        overflow: hidden;  
+            .logo_header{
+                width: 10vw;
+                margin-right: 84vw;
+                margin-top: -5vw;
+            }
+            .burger_menu{
+                display: none;
+            }
+            .top_bar{
+                visibility: visible;
+                margin-left: 60vw;
+                margin-top: -2vw;
+                word-spacing: 3vw;
+                .other{
+                text-decoration: none;
+                font-family: 'Barlow', sans-serif;
+                color: white;
+                font-size: 1.5vw;   
+                }
+                .contact{
+                    font-family: 'Fraunces', serif;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1vw;
+                    background-color: rgba(255, 255, 255, 0.348);
+                    text-transform: uppercase;
+                    padding: 0.8vw;
+                    padding-left: 1vw;
+                    padding-right: 1vw;
+                    border-radius: 35vw;
+                }
+            }
+            h1{
+                font-family: 'Fraunces', serif;
+                color: white;
+                margin-top: 6vw;
+                font-size: 5vw;
+                font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: 1vw;
+            }
+            .arrow{
+                width: 5vw;
+                margin-top: 28vw;
+            }
+        }
+        .entoure_2_3{
+            width: 50vw;
+            display: flex;
+            flex-direction: row-reverse;
+            .two{
+            display: flex;
+                .egg{
+                    width: 50vw;
+                    position: absolute;
+                    align-content: center;
+                }
+            }
+            .three{
+                width: 50vw;
+                margin-right: 10vw;
+                margin-left: 10vw;
+
+                @include text_one;
+                h2{
+                    margin-top: 10vw;
+                }
+                p{
+                    margin-top: 18vw;
+                    margin-left: 8vw;
+                }
+                a{
+                    margin-top: 32vw;
+                    margin-right: 21vw;                
+                }
+            }
+        }
+        .entoure_4_5{
+            .four{
+            width: 50vw;
+            display: flex;
+            flex-direction: row;
+                    .glass{
+                        width: 50vw;
+                        position: absolute;
+                        align-content: center;
+                        margin-top: 41.5vw;
+                    }
+                }
+                .five{
+                    width: 50vw;
+                    margin-left: 49vw;
+
+                    @include text_one;
+                    h2{
+                        margin-top: 50vw;
+                        margin-left: 11vw;
+                    }
+                    p{
+                        margin-top: 58vw;
+                        margin-left: 11vw;
+                    }
+                    a{
+                        margin-top: 73vw;
+                        margin-right: 18vw;
+                    }
+                }
+        }
+        
+        .six{
+        background-image: url(./assets/cherry-mobile.jpg);
+        width: 100%;
+        background-size: cover;
+        height: 165vw;
+        justify-content: center; 
+        overflow: hidden;
+        position: absolute;
+        margin-top: 495vw;
+        @include text_two;
+        display: flex;
+        align-items: center;
+            h3{
+               margin-top: 80vw; 
+               color: #24554A;
+            }
+            p{
+                margin-top: 120vw;
+                font-size: 4vw;
+                margin-left: 3vw;
+                margin-right: 3vw;
+                color: #24554A;
+            }
+        }
+        .seven{
+        background-image: url(./assets/madarine-mobile.jpg);
+        width: 100%;
+        background-size: cover;
+        height: 165vw;
+        justify-content: center; 
+        overflow: hidden;
+        position: absolute;
+        margin-top: 655vw;
+        @include text_two;
+        display: flex;
+        align-items: center;
+            h3{
+               margin-top: 80vw; 
+               color: #052C3B;
+            }
+            p{
+                margin-top: 120vw;
+                font-size: 4vw;
+                margin-left: 3vw;
+                margin-right: 3vw;
+                color: #052C3B;
+            }
+
+        }
+        .height{
+            position: absolute;
+            width: 100%;
+            margin-top: 828vw;
+            h4{
+            font-family: 'Fraunces', serif;
+            color: #A7AAAD;
+            letter-spacing: 1vw;
+            text-transform: uppercase;
+            font-size: 4vw;
+            }
+            .photo{
+                border-radius: 50%;
+                margin-top: 20vw;
+            }
+            @include text_three;
+        }
+        .nine{
+            margin-top: 1150vw;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .four_img{
+                width: 50vw;
+            }
+        }
+}
+footer{
+    .footer{
+    width: 100vw;
+    margin-top: 1110vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #90D4C6;
+    align-items: center;
+        .footer_img{
+        margin-top: 15vw;
+        width: 40vw;
+        }
+        .ft_link{
+            margin-top: 15vw;
+            word-spacing: 10vw;
+            a{
+            font-family: 'Barlow', sans-serif;
+            color: #458D7E;           
+            text-decoration: none;  
+            }
+            .none{
+            display: none;            
+            }
+        }
+        .lk_rs{
+            margin-top: 20vw;
+            margin-bottom: 20vw;
+            display: flex;
+            a{
+                img{
+                    margin-left: 4vw;
+                    margin-right: 4vw;
+                }
+            }
+        }
+    }
+} 
+}
