@@ -319,6 +319,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color: #F2F2F2;
 }
 body .one {
   background-image: url(./assets/image-header-mobile.jpg);
@@ -520,6 +521,7 @@ body .height h4 {
 }
 body .height .photo {
   border-radius: 50%;
+  margin-top: 20vw;
 }
 body .height .customer_desc {
   font-family: "Barlow", sans-serif;
@@ -542,7 +544,7 @@ body .height .customer_job {
   font-weight: 600;
 }
 body .nine {
-  margin-top: 1100vw;
+  margin-top: 1150vw;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -554,32 +556,36 @@ body .nine .four_img {
 
 footer .footer {
   width: 100vw;
-  margin-top: 1060vw;
+  margin-top: 1110vw;
   position: absolute;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: #90D4C6;
+  align-items: center;
 }
-footer .footer .ft_titre {
-  margin-top: 5vw;
-  color: #2C7566;
-  font-family: "Barlow", sans-serif;
-  font-size: 8vw;
-  font-weight: 900;
+footer .footer .footer_img {
+  margin-top: 15vw;
+  width: 40vw;
+}
+footer .footer .ft_link {
+  margin-top: 15vw;
+  word-spacing: 10vw;
 }
 footer .footer .ft_link a {
   font-family: "Barlow", sans-serif;
   color: #458D7E;
-  margin-top: 10vw;
-  letter-spacing: -0.128571px;
   text-decoration: none;
 }
-footer .footer .lk_rs a {
-  font-family: "Barlow", sans-serif;
-  color: #458D7E;
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-  text-decoration: none;
-  letter-spacing: -0.128571px;
+footer .footer .ft_link .none {
+  display: none;
+}
+footer .footer .lk_rs {
+  margin-top: 20vw;
+  margin-bottom: 20vw;
+  display: flex;
+}
+footer .footer .lk_rs a img {
+  margin-left: 4vw;
+  margin-right: 4vw;
 }/*# sourceMappingURL=style.css.map */

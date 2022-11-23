@@ -66,7 +66,7 @@
     }
 }
 
-    body{
+body{
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -75,6 +75,7 @@
         margin: 0;
         padding: 0;
         text-align: center;
+        background-color: #F2F2F2;
        .one{
         background-image: url(./assets/image-header-mobile.jpg);
         width: 100%;
@@ -210,11 +211,12 @@
             }
             .photo{
                 border-radius: 50%;
+                margin-top: 20vw;
             }
             @include text_three;
         }
         .nine{
-            margin-top: 1100vw;
+            margin-top: 1150vw;
             position: absolute;
             display: flex;
             flex-direction: row;
@@ -227,36 +229,38 @@
 footer{
     .footer{
     width: 100vw;
-    margin-top: 1060vw;
+    margin-top: 1110vw;
     position: absolute;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: #90D4C6;
-        .ft_titre{
-        margin-top: 5vw;
-        color: #2C7566; 
-        font-family: 'Barlow', sans-serif;
-        font-size: 8vw;
-        font-weight: 900;
+    align-items: center;
+        .footer_img{
+        margin-top: 15vw;
+        width: 40vw;
         }
         .ft_link{
+            margin-top: 15vw;
+            word-spacing: 10vw;
             a{
             font-family: 'Barlow', sans-serif;
-            color: #458D7E;
-            margin-top: 10vw;
-            letter-spacing: -0.128571px;
-            text-decoration: none;
+            color: #458D7E;           
+            text-decoration: none;  
+            }
+            .none{
+            display: none;            
             }
         }
         .lk_rs{
+            margin-top: 20vw;
+            margin-bottom: 20vw;
+            display: flex;
             a{
-            font-family: 'Barlow', sans-serif;
-            color: #458D7E;
-            margin-top: 10vw;
-            margin-bottom: 10vw;
-            text-decoration: none;
-            letter-spacing: -0.128571px
+                img{
+                    margin-left: 4vw;
+                    margin-right: 4vw;
+                }
             }
         }
     }
