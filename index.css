@@ -320,7 +320,7 @@ body .menu {
   width: 100vw;
   position: absolute;
   left: 0;
-  top: 30px;
+  top: 50px;
 }
 body .menu .menu_content {
   width: 80%;
@@ -329,11 +329,60 @@ body .menu .menu_content {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 1280px) {
+  body .menu .menu_content {
+    width: 80%;
+  }
+}
+body .menu .menu_content .logo_header {
+  width: 30%;
+}
+@media screen and (min-width: 1280px) {
+  body .menu .menu_content .logo_header {
+    width: 15%;
+    margin-left: 5%;
+  }
+}
 body .menu .menu_content .nav_links {
   display: none;
 }
+@media screen and (min-width: 1280px) {
+  body .menu .menu_content .nav_links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+  }
+  body .menu .menu_content .nav_links .other {
+    font-family: "Barlow", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 170%;
+    margin-left: 5%;
+  }
+  body .menu .menu_content .nav_links .contact {
+    font-family: "Fraunces", serif;
+    color: black;
+    font-size: 170%;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #fff;
+    margin-left: 5%;
+    padding: 2%;
+    border-radius: 40vw;
+  }
+  body .menu .menu_content .nav_links .contact:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.636);
+  }
+}
 body .menu .menu_content .burger_menu {
   display: inline;
+}
+@media screen and (min-width: 1280px) {
+  body .menu .menu_content .burger_menu {
+    display: none;
+  }
 }
 body .header {
   width: 100%;
@@ -344,6 +393,13 @@ body .header {
   background-image: url(./assets/image-header-mobile.jpg);
   background-size: cover;
   background-position: center;
+}
+@media screen and (min-width: 1280px) {
+  body .header {
+    background-image: url(./assets/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 }
 body .header .header_content {
   display: flex;
@@ -356,6 +412,17 @@ body .header .header_content {
   text-align: center;
   letter-spacing: 2vw;
 }
+@media screen and (min-width: 1280px) {
+  body .header .header_content {
+    font-size: 40px;
+    margin-bottom: 10%;
+  }
+}
 body .header .arrow {
   margin-top: 10%;
+}
+@media screen and (min-width: 1280px) {
+  body .header .arrow {
+    width: 5%;
+  }
 }/*# sourceMappingURL=index.css.map */
