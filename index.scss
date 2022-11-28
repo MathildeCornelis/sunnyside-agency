@@ -441,4 +441,65 @@ body{
                 }
             }
         }
+        .footer{
+            width: 100%;
+            background-color: #90D4C6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 15%;
+            @include desktop_xl{
+                padding-top: 10%;
+            }
+            .footer_img{
+                width: 30%;
+                @include desktop_xl{
+                    width: 20%;
+                }
+            }
+            .ft_link{
+                word-spacing: 15vw;
+                margin-top: 10%;
+                margin-bottom: 20%;
+                @include desktop_xl{
+                    font-size: 115%;
+                    word-spacing: 5vw;
+                    margin-top: 7%;
+                    margin-bottom: 12%;
+                }
+                a{
+                    text-decoration: none;
+                    font-family: 'Barlow', sans-serif;
+                    color: #458D7E;
+                    @include desktop_xl{
+                        font-size: 140%;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .lk_rs{
+                width: 50%;
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 20%;
+                @include desktop_xl{
+                    width: 25%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-bottom: 10%;
+                    }
+            .rs{
+                @include desktop_xl{
+                width: 150%;
+                    &:hover{
+                        filter: brightness(100%);
+                    }
+                }
+            }
+                
+            }
+        }
 }
