@@ -502,6 +502,7 @@ body .milieu .carre .img_carre {
 body .milieu .div_block_content {
   text-align: center;
   justify-content: center;
+  position: relative;
 }
 @media screen and (min-width: 1280px) {
   body .milieu .div_block_content {
@@ -554,23 +555,26 @@ body .milieu .div_block_content .before_1 {
     margin-top: 10%;
     font-size: 110%;
   }
+  body .milieu .div_block_content .before_1:hover::before {
+    background-color: #fad400;
+  }
 }
 body .milieu .div_block_content .before_1::before {
   content: "";
   position: absolute;
   background-color: rgba(250, 212, 0, 0.4196078431);
-  width: 25%;
-  height: 0.3%;
+  width: 100px;
+  height: 7px;
   border-radius: 40vw;
-  margin-top: 2%;
+  margin-top: 2.5%;
   margin-left: -1%;
 }
 @media screen and (min-width: 1280px) {
   body .milieu .div_block_content .before_1::before {
-    width: 9.25%;
-    margin-top: 0.85%;
+    width: 117px;
+    height: 7px;
+    margin-top: 2.75%;
     margin-left: -0.25%;
-    height: 0.4%;
   }
 }
 body .milieu .div_block_content .before_2 {
@@ -587,30 +591,27 @@ body .milieu .div_block_content .before_2 {
     margin-top: 10%;
     font-size: 110%;
   }
+  body .milieu .div_block_content .before_2:hover::before {
+    background-color: #fe7866;
+  }
 }
 body .milieu .div_block_content .before_2::before {
   content: "";
   position: absolute;
   background-color: rgba(254, 120, 102, 0.4235294118);
-  width: 25%;
-  height: 0.3%;
+  width: 100px;
+  height: 7px;
   border-radius: 40vw;
-  margin-top: 2%;
+  margin-top: 2.5%;
   margin-left: -1%;
 }
 @media screen and (min-width: 1280px) {
   body .milieu .div_block_content .before_2::before {
-    width: 9.25%;
-    margin-top: 0.85%;
+    width: 117px;
+    height: 7px;
+    margin-top: 2.75%;
     margin-left: -0.25%;
-    height: 0.4%;
   }
-  body .milieu .div_block_content .before_2::before:hover {
-    background-color: #fe7866;
-  }
-}
-body .milieu .div_block_content .before_2:hover::before {
-  background-color: #fe7866;
 }
 body .milieu .bg {
   background-image: url(./assets/cherry.jpg);
@@ -625,7 +626,7 @@ body .milieu .bg {
   body .milieu .bg {
     background-image: url(./assets/cherry.jpg);
     width: 50%;
-    height: 560px;
+    height: 600px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -639,7 +640,7 @@ body .milieu .bg .content_block_imag {
 }
 @media screen and (min-width: 1280px) {
   body .milieu .bg .content_block_imag {
-    margin-top: 50%;
+    margin-top: 35%;
   }
 }
 body .milieu .bg .content_block_imag h3 {
@@ -678,7 +679,7 @@ body .milieu .bg_2 {
   body .milieu .bg_2 {
     background-image: url(./assets/madarine.jpg);
     width: 50%;
-    height: 560px;
+    height: 600px;
     background-size: cover;
     justify-content: center;
     overflow: hidden;
@@ -693,7 +694,7 @@ body .milieu .bg_2 .content_block_imag {
 }
 @media screen and (min-width: 1280px) {
   body .milieu .bg_2 .content_block_imag {
-    margin-top: 50%;
+    margin-top: 35%;
   }
 }
 body .milieu .bg_2 .content_block_imag h3 {
@@ -863,6 +864,6 @@ body .footer .lk_rs {
     width: 150%;
   }
   body .footer .lk_rs .rs:hover {
-    filter: brightness(100%);
+    filter: brightness(100);
   }
 }/*# sourceMappingURL=index.css.map */

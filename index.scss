@@ -171,6 +171,7 @@ body{
                 .div_block_content{
                         text-align: center;
                         justify-content: center;
+                        position: relative;
                         @include desktop_xl{
                             text-align: left;
                             width: 100%;
@@ -213,21 +214,27 @@ body{
                             @include desktop_xl{
                                 margin-top: 10%;
                                 font-size: 110%;
+                                &:hover{
+                                    &::before{
+                                        background-color:#fad400;
+                                    }
+                                }
                             }
                             &::before {
                                 content: "";
                                 position: absolute;
                                 background-color:#fad4006b;
-                                width: 25%;
-                                height: 0.3%;
+                                width: 100px;
+                                height: 7px;
                                 border-radius: 40vw;
-                                margin-top: 2%;
+                                margin-top: 2.5%;
                                 margin-left: -1%;
                                 @include desktop_xl{
-                                    width: 9.25%;
-                                    margin-top: 0.85%;
+                                    width: 117px;
+                                    height: 7px;
+                                    margin-top: 2.75%;
                                     margin-left: -0.25%;
-                                    height: 0.4%;
+                                    
                                 }
                             }
                             
@@ -243,31 +250,29 @@ body{
                             @include desktop_xl{
                                 margin-top: 10%;
                                 font-size: 110%;
+                                &:hover{
+                                    &::before{
+                                        background-color:#fe7866;
+                                    }
+                                }
                             }
                             &::before {
                                 content: "";
                                 position: absolute;
                                 background-color: #fe78666c;
-                                width: 25%;
-                                height: 0.3%;
+                                width: 100px;
+                                height: 7px;
                                 border-radius: 40vw;
-                                margin-top: 2%;
+                                margin-top: 2.5%;
                                 margin-left: -1%;
                                 @include desktop_xl{
-                                    width: 9.25%;
-                                    margin-top: 0.85%;
+                                    width: 117px;
+                                    height: 7px;
+                                    margin-top: 2.75%;
                                     margin-left: -0.25%;
-                                    height: 0.4%;
-                                    &:hover{
-                                        background-color:#fe7866;
-                                    }
                                 }
                             }
-                            &:hover{
-                                &::before{
-                                    background-color:#fe7866;
-                                }
-                            }
+                            
                         }
                 }
                 .bg{
@@ -281,7 +286,7 @@ body{
                     @include desktop_xl{
                         background-image: url(./assets/cherry.jpg);
                         width: 50%;
-                        height: 560px;
+                        height: 600px;
                         background-size: cover;
                         background-position: center;
                         display: flex;
@@ -292,7 +297,7 @@ body{
                     .content_block_imag{
                         margin-top: 115%;
                         @include desktop_xl{
-                            margin-top: 50%;
+                            margin-top: 35%;
                         }
                         h3{
                             font-family: 'fraunces', serif;
@@ -328,7 +333,7 @@ body{
                     @include desktop_xl{
                         background-image: url(./assets/madarine.jpg);
                         width: 50%;
-                        height: 560px;
+                        height: 600px;
                         background-size: cover;
                         justify-content: center; 
                         overflow: hidden;
@@ -340,7 +345,7 @@ body{
                     .content_block_imag{
                         margin-top: 115%;
                         @include desktop_xl{
-                            margin-top: 50%;
+                            margin-top: 35%;
                         }
                         h3{
                             font-family: 'fraunces', serif;
@@ -495,7 +500,7 @@ body{
                 @include desktop_xl{
                 width: 150%;
                     &:hover{
-                        filter: brightness(100%);
+                        filter: brightness(100);
                     }
                 }
             }
