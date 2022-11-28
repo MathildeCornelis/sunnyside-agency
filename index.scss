@@ -8,6 +8,12 @@ body{
     position: relative;
     margin: 0;
     padding: 0;
+    @include desktop_xl{
+        width: 100vw;
+        position: relative;
+        margin: 0;
+        padding: 0;    
+    }
         .menu{
             width: 100vw;
             position: absolute;
@@ -40,13 +46,13 @@ body{
                         font-family: 'Barlow', sans-serif;
                         color: white;
                         text-decoration: none;
-                        font-size: 170%;
+                        font-size: 150%;
                         margin-left: 5%;
                         }
                         .contact{
                         font-family: 'Fraunces', serif;
                         color: black;
-                        font-size: 170%;
+                        font-size: 140%;
                         text-decoration: none;
                         text-transform: uppercase;
                         background-color: #fff;
@@ -94,11 +100,11 @@ body{
                     letter-spacing: 2vw;
                     @include desktop_xl{
                         font-size: 40px;
-                        margin-bottom: 10%;
+                        margin-bottom: 5%;
                     }
                 }
             .arrow{
-                margin-top: 10%;
+                margin-top: 5%;
                 @include desktop_xl{
                     width: 5%;
                 }
@@ -109,74 +115,304 @@ body{
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
-            .carre{
+            @include desktop_xl{
+                width: 100%;
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-                height: auto;
-                max-width: 100%;
-                .img_carre{
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                }
+            .one{
+                @include desktop_xl{
+                    display: flex;
+                    width: 100%;
+                    .egg{
+                        order: 2;
+                    }
+                    .txt1{
+                        order: 1;
+                    }
+                }
+            }
+            .two{
+                @include desktop_xl{
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                }
+            }
+            .three{
+                @include desktop_xl{
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                }
+            }
+                .carre{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
                     height: auto;
                     max-width: 100%;
+                    @include desktop_xl{
+                        display: flex;
+                        width: 50%;
+                    }
+                    .img_carre{
+                        height: auto;
+                        width: 100%;
+                        @include desktop_xl{
+                            height: auto;
+                            width: 100%;
+                            overflow: hidden;
+                        }
+                    }
                 }
                 .div_block_content{
-                    text-align: center;
-                    h2{
-                        font-family: 'fraunces', serif;
-                        font-size: 240%;
-                    }
-                    p{
-                    font-family: 'Barlow', sans-serif;
-                    margin-left: 10%;
-                    margin-right: 10%;
-                    color: #808397;
-                    line-height: 190%;
-                    font-size: 110%;
-                    }
-                    .before_1{
-                        text-decoration: none;
-                        font-family: 'fraunces', serif;
-                        text-transform: uppercase;
-                        font-size: 90%;
-                        color: #24303E;
-                        display: block;
-                        margin-bottom: 15%;
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            background-color:#fad4008f;
-                            width: 30%;
-                            height: 0.3%;
-                            border-radius: 40vw;
-                            margin-top: 2%;
-                            margin-left: -2%;
+                        text-align: center;
+                        justify-content: center;
+                        @include desktop_xl{
+                            text-align: left;
+                            width: 100%;
+                            margin-left: 15%;
+                            margin-right: 15%;
                         }
+                        h2{
+                            font-family: 'fraunces', serif;
+                            font-size: 240%;
+                            @include desktop_xl{
+                                font-family: 'fraunces', serif;
+                                font-size: 280%;
+                                margin-right: 15%;
+                            }
+                        }
+                        p{
+                            font-family: 'Barlow', sans-serif;
+                            margin-left: 10%;
+                            margin-right: 10%;
+                            color: #808397;
+                            line-height: 190%;
+                            font-size: 110%;
+                            @include desktop_xl{
+                                font-family: 'Barlow', sans-serif;
+                                margin-left: 0%;
+                                margin-right: 5%;
+                                color: #808397;
+                                line-height: 190%;
+                                font-size: 105%;
+                            }
+                        }
+                        .before_1{
+                            text-decoration: none;
+                            font-family: 'fraunces', serif;
+                            text-transform: uppercase;
+                            font-size: 90%;
+                            color: #24303E;
+                            display: block;
+                            margin-bottom: 15%;
+                            @include desktop_xl{
+                                margin-top: 10%;
+                                font-size: 110%;
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                background-color:#fad4006b;
+                                width: 25%;
+                                height: 0.3%;
+                                border-radius: 40vw;
+                                margin-top: 2%;
+                                margin-left: -1%;
+                                @include desktop_xl{
+                                    width: 9.25%;
+                                    margin-top: 0.85%;
+                                    margin-left: -0.25%;
+                                    height: 0.4%;
+                                }
+                            }
+                            
+                        }
+                        .before_2{
+                            text-decoration: none;
+                            font-family: 'fraunces', serif;
+                            text-transform: uppercase;
+                            font-size: 90%;
+                            color: #24303E;
+                            display: block;
+                            margin-bottom: 15%;
+                            @include desktop_xl{
+                                margin-top: 10%;
+                                font-size: 110%;
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                background-color: #fe78666c;
+                                width: 25%;
+                                height: 0.3%;
+                                border-radius: 40vw;
+                                margin-top: 2%;
+                                margin-left: -1%;
+                                @include desktop_xl{
+                                    width: 9.25%;
+                                    margin-top: 0.85%;
+                                    margin-left: -0.25%;
+                                    height: 0.4%;
+                                    &:hover{
+                                        background-color:#fe7866;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                &::before{
+                                    background-color:#fe7866;
+                                }
+                            }
+                        }
+                }
+                .bg{
+                    background-image: url(./assets/cherry.jpg);
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    height: 165vw;
+                    justify-content: center; 
+                    overflow: hidden;
+                    @include desktop_xl{
+                        background-image: url(./assets/cherry.jpg);
+                        width: 50%;
+                        height: 560px;
+                        background-size: cover;
+                        background-position: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
                     }
-                    .before_2{
-                        text-decoration: none;
-                        font-family: 'fraunces', serif;
-                        text-transform: uppercase;
-                        font-size: 90%;
-                        color: #24303E;
-                        display: block;
-                        margin-bottom: 15%;
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            background-color: #fe78669c;
-                            width: 30%;
-                            height: 0.3%;
-                            border-radius: 40vw;
-                            margin-top: 2%;
-                            margin-left: -2%;
+                    .content_block_imag{
+                        margin-top: 115%;
+                        @include desktop_xl{
+                            margin-top: 50%;
+                        }
+                        h3{
+                            font-family: 'fraunces', serif;
+                            color: #24554A;
+                            font-size: 200%;
+                            font-weight: 900;
+                            text-align: center;
+                        }
+                        p{
+                            font-family: 'Barlow', sans-serif;
+                            color: #24554A;
+                            font-size: 100%;
+                            text-align: center;
+                            margin-right: 8%;
+                            margin-left: 8%;
+                            line-height: 150%;
+                            @include desktop_xl{
+                                margin-left: 20%;
+                                margin-right: 20%;
+                                line-height: 200%;
+                            }
                         }
                     }
                 }
-                .content_block_imag{
-                    background-image: url(/assets/cherry-mobile.jpg);
+                .bg_2{
+                    background-image: url(./assets/madarine.jpg);
+                    width: 100%;
                     background-size: cover;
                     background-position: center;
+                    height: 165vw;
+                    justify-content: center; 
+                    overflow: hidden;
+                    @include desktop_xl{
+                        background-image: url(./assets/madarine.jpg);
+                        width: 50%;
+                        height: 560px;
+                        background-size: cover;
+                        justify-content: center; 
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                    }
+                    .content_block_imag{
+                        margin-top: 115%;
+                        @include desktop_xl{
+                            margin-top: 50%;
+                        }
+                        h3{
+                            font-family: 'fraunces', serif;
+                            color: #052C3B;
+                            font-size: 200%;
+                            font-weight: 900;
+                            text-align: center;
+                        }
+                        p{
+                            font-family: 'Barlow', sans-serif;
+                            color: #19536C;
+                            font-size: 100%;
+                            text-align: center;
+                            margin-right: 8%;
+                            margin-left: 8%;
+                            line-height: 150%;
+                            @include desktop_xl{
+                                margin-left: 20%;
+                                margin-right: 20%;
+                                line-height: 200%;
+                            }
+                        }
+                    }
+                }
+            
+        }
+        .client{
+            width: 80%;
+            margin: auto;
+            h4{
+                font-family: 'fraunces', serif;
+                text-transform: uppercase;
+                color: #A7AAAD;
+                text-align: center;
+                font-size: 100%;
+                letter-spacing: 1vw;
+                word-spacing: 2vw;
+                margin-top: 20%;
+            }
+            .row{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding-top: 20%;
+                .presa{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    .photo{
+                        width: 25%;
+                        border-radius: 50%;
+                    }
+                    .customer_desc{
+                        width: 100%;
+                        font-family: 'Barlow', sans-serif;
+                        color: #5B636D;
+                        line-height: 150%;
+                        font-size: 110%;
+                        text-align: center;
+                    }
+                    .customer_sing{
+                        font-family: 'fraunces', serif;
+                        color: #24303E;
+                        font-size: 140%;
+                    }
+                    .customer_job{
+                        font-family: 'Barlow', sans-serif;
+                        color: #A7AAAD;
+                        margin-bottom: 20%;
+                    }
                 }
             }
         }
